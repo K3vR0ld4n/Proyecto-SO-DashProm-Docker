@@ -95,7 +95,7 @@ void recolectar_metricas_sistema(char *buffer) {
 
     // Construir la salida final
     snprintf(buffer, BUF_SIZE,
-             "CPU: %.2f\nMEMORIA: %.2f\nDISCO: %.2f\nPROCESOS: %d\nTEMPERATURA_CPU: %.2f\nRED: %.2f KB/s\nSWAP: %.2f\n",
+             "CPU: %.2f\nMEMORIA: %.2f\nDISCO: %.2f\nPROCESOS: %d\nTEMPERATURA_CPU: %.2f\nRED: %.2f \nSWAP: %.2f\n",
              cpu_usage, mem_usage, disk_usage, num_procesos, temp_cpu, net_usage, swap_usage);
 
     pthread_mutex_unlock(&mutex);
